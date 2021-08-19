@@ -20,4 +20,4 @@
 * ### HTML
 * ### CSS
 ## ⚠️Status do projeto:⚠️
-### ❌ Em andamento ❌
+### ✔️ Concluído ✔️
