@@ -12,7 +12,12 @@
     <header>
         <div class="intro">
             <p class="titulo">Equipe Goldman</p>
-            <p>No tutorial de hoje iremos tirar todas as duvidas que você tiver sobre AWS, Putty e WinSCP</p>
+            <p class="info">No tutorial de hoje iremos tirar todas as duvidas que você tiver sobre AWS, Putty e WinSCP</p>
+            <nav>
+                <a href="#aws">AWS</a> -
+                <a href="#putty">Putty</a> -
+                <a href="#win">WinSCP</a>
+            </nav>
         </div>
     </header>
     <main>
@@ -27,12 +32,11 @@
                     <h2>Putty</h2>
                 </div>
                 <div class="descricao">
-                    <p>O Putty é um software de emulação de terminal free code, conhecido como uma alternativa para o
-                        SSH.</p>
+                    <p>O Putty é um software de emulação de terminal free code, conhecido como uma alternativa para o SSH.
+                    </p>
                 </div>
                 <div class="download">
-                    <p><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"
-                            target="_blank">Download</a></p>
+                    <p><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank">Download</a></p>
                 </div>
             </div>
             <div class="aws">
@@ -43,8 +47,7 @@
                     <h2>AWS</h2>
                 </div>
                 <div class="descricao">
-                    <p>Amazon Web Services (AWS) é uma plataforma de computação em nuvem, no qual iremos utilizar para
-                        criar uma máquina virtual na nuvem.</p>
+                    <p>Amazon Web Services (AWS) é uma plataforma de computação em nuvem, no qual iremos utilizar para criar uma máquina virtual na nuvem.</p>
                 </div>
                 <div class="download">
                     <p><a href="https://aws.amazon.com/pt/console/" target="_blank">Site</a></p>
@@ -58,8 +61,7 @@
                     <h2>WinSCP</h2>
                 </div>
                 <div class="descricao">
-                    <p>O WinSCP é usado para protocolos SCP, FTP e SFTP, ele serve para a transferência de arquivos de
-                        um local físico para um remoto.</p>
+                    <p>O WinSCP é usado para protocolos SCP, FTP e SFTP, ele serve para a transferência de arquivos de um local físico para um remoto.</p>
                 </div>
                 <div class="download">
                     <p><a href="https://winscp.net/eng/download.php" target="_blank">Download</a></p>
@@ -67,7 +69,7 @@
             </div>
         </div>
         <!--------------------------------------------PASSO 1 2 3 DO AWS----------------------------------------------------------->
-        <span class="links">AWS</span>
+        <span class="links" id="aws">AWS</span>
         <div class="conteiner">
             <div class="putty">
                 <div class="icones">
@@ -79,7 +81,7 @@
                 <div class="descricao">
                     <p>Com o AWS console aberto clicar em fazer login novamente e colocar suas informações.</p>
                 </div>
-               
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -91,7 +93,7 @@
                 <div class="descricao">
                     <p>Pesquisar por EC2, clicar em executar instância e pesquisar por ubuntu server 20.04 e selecionar.</p>
                 </div>
-               
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -103,7 +105,7 @@
                 <div class="descricao">
                     <p>Marcar a caixa T2 micro e clicar em próximo, não altere nada e clique em próximo.</p>
                 </div>
-                
+
             </div>
         </div>
 
@@ -119,7 +121,7 @@
                 <div class="descricao">
                     <p>Em armazenamento fica à seu critério, mas 8Gb é suficiente, após isso clique em próximo.</p>
                 </div>
-                
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -131,7 +133,7 @@
                 <div class="descricao">
                     <p>Em Tags, clique em adicionar tag, o campo de chave irá receber "Name" enquanto o campo valor fica a seu critério.</p>
                 </div>
-                
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -167,14 +169,14 @@
                     <h2>Passo 8</h2>
                 </div>
                 <div class="descricao">
-                    <p>Clique em "Instâncias (em execução) em seguida clique no ID da sua instância e anote o endereço IPv4 público iremos precisar
-                        .</p>
+                    <p>Clique em "Instâncias (em execução) em seguida clique no ID da sua instância e anote o endereço IPv4 público iremos precisar .
+                    </p>
                 </div>
             </div>
 
         </div>
         <!--------------------------------------------------PASSO 1 2 E 3 DO PUTTYGEN----------------------------------------------------->
-        <span class="links">PuttyGen</span>
+        <span class="links" id="putty">PuttyGen</span>
         <div class="conteiner">
             <div class="putty">
                 <div class="icones">
@@ -186,7 +188,7 @@
                 <div class="descricao">
                     <p>Após instalarmos o Putty teremos a ferramenta PuttyGen disponível, abra ela pesquisando na barra de pesquisa do Windows.</p>
                 </div>
-    
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -198,7 +200,7 @@
                 <div class="descricao">
                     <p>Com o PuttyGen aberto clique em load e ao lado do nome altere "Putty Private Key Files" para "All files" e localize aonde salvou o par de chaves.</p>
                 </div>
-              
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -210,7 +212,7 @@
                 <div class="descricao">
                     <p>Abra o arquivo .pem e clique em save private key depois clique em sim e salve o arquivo .ppk em uma pasta de sua escolha.</p>
                 </div>
-                
+
             </div>
         </div>
         <span class="links">Putty</span>
@@ -226,7 +228,7 @@
                 <div class="descricao">
                     <p>Abrir o Putty e preencher o campo "host name" com o IPv4 da máquina criada na AWS.</p>
                 </div>
-                
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -238,7 +240,7 @@
                 <div class="descricao">
                     <p>Nas categorias presentes do lado esquerdo clique em SSH e Auth, depois disso no campo "Private key file for authentication" clique em Browse.</p>
                 </div>
-               
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -250,7 +252,7 @@
                 <div class="descricao">
                     <p>Agora procure o local onde foi salvo o arquivo .ppk e clique em abrir, em seguida clique em open.</p>
                 </div>
-               
+
             </div>
         </div>
         <!-----------------------------------PASSO 4 5 6 DO PUTTY------------------------------>
@@ -265,7 +267,7 @@
                 <div class="descricao">
                     <p>Como é sua primeira vez com o aplicativo ele irá exibir uma mensagem, basta clicar em accept e a interface do Putty irá abrir.</p>
                 </div>
-               
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -279,7 +281,7 @@
                     <p id="espaco">$ ubuntu</p>
                     <p id="espaco">$ sudo su</p>
                 </div>
-               
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -292,7 +294,7 @@
                     <p>$ apt update (Caso necessário digite Y e aperte enter)</p>
                     <p id="espaco"> $ apt upgrade (Caso necessário digite Y e aperte enter)</p>
                 </div>
-              
+
             </div>
         </div>
         <!-----------------------------------PASSO 7 E 8 DO PUTTY--------------------------------------------------->
@@ -308,7 +310,7 @@
                     <p>$ apt install apache2</p>
                     <p id="espaco">$ chown -R ubuntu:ubuntu /var/www/html</p>
                 </div>
-               
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -320,10 +322,10 @@
                 <div class="descricao">
                     <p> No seu navegador coloque o IPv4 público do AWS e veja se o apache responde.</p>
                 </div>
-                
+
             </div>
         </div>
-        <span class="links">WinSCP</span>
+        <span class="links" id="win">WinSCP</span>
         <!----------------------------------PASSO 1 2 3 DO WINSCP-->
         <div class="conteiner">
             <div class="putty">
@@ -336,7 +338,7 @@
                 <div class="descricao">
                     <p>Com o WinSCP baixado, abre ele na barra de pesquisa do Windows, em seguida no host digite novamente o IPv4 público.</p>
                 </div>
-              
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -348,7 +350,7 @@
                 <div class="descricao">
                     <p>Em usuário, digite "ubuntu" e clique em avançado. Em SSH -> Autenticação clique nos "..." da opção Arquivo de chave privada.</p>
                 </div>
-               
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -360,7 +362,7 @@
                 <div class="descricao">
                     <p>No arquivo de chave privada selecione o arquivo .ppk e clique em ok e em seguida em login.</p>
                 </div>
-                
+
             </div>
         </div>
         <!-----------------------------------------------------PASSO 4 5 E 6 DO WINSCP-------------------------------->
@@ -375,7 +377,7 @@
                 <div class="descricao">
                     <p>Uma vez conectado, o seu lado esquerdo serão os arquivos presentes na sua máquina física, enquanto no lado direito os arquivos da máquina virtual.</p>
                 </div>
-                
+
             </div>
             <div class="aws">
                 <div class="icones">
@@ -387,7 +389,7 @@
                 <div class="descricao">
                     <p>No lado direito vamos clicar em cima da primeira "/" no local "/home/ubuntu/" clicando na primeira barra, seremos levados para o diretório raiz.</p>
                 </div>
-               
+
             </div>
             <div class="win">
                 <div class="icones">
@@ -399,7 +401,7 @@
                 <div class="descricao">
                     <p>No diretório raiz, vamos procurar a pasta "var" e clicar duas vezes em cima dela, dentro de var procurar a pasta "www" e clicar novamente duas vezes em cima.</p>
                 </div>
-               
+
             </div>
         </div>
         <!-------------------------------------------------------PASSO 7 DO WINSCP---------------------------->
@@ -414,7 +416,7 @@
                 <div class="descricao">
                     <p>Dentro de "www" realizaremos o mesmo processo com as pastas anteriores, na pasta "html", a partir daqui você pode pegar um index.html da sua máquina e substituir para que o novo index fique hospedado no IPv4 público da máquina</p>
                 </div>
-               
+
             </div>
 
 
@@ -423,7 +425,7 @@
         <span class="links">Vídeo</span>
         <div class="conteiner3">
             <div class="video">
-             <video width="500px" height="400px" controls>
+                <video width="500px" height="400px" controls>
                  <source src="img/video.mp4">
              </video>
             </div>
@@ -434,7 +436,7 @@
         </div>
     </main>
     <footer>
-          <em>Elaborado pela Equipe Goldman</em>
+        <em>Elaborado pela Equipe Goldman</em>
     </footer>
 </body>
 
